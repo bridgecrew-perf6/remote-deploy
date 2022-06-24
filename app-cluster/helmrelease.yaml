@@ -6,7 +6,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: cluster/cicd/newChart-0.1.0.tgz
+      chart: app-cluster/newChart-0.1.0.tgz
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: GitRepository
