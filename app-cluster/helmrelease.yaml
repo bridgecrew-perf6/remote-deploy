@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: test
-  namespace: default
+  namespace: flux-system
 spec:
   #serviceAccountName: remote-sa
   kubeConfig:
@@ -14,6 +14,6 @@ spec:
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: GitRepository
-        name: flux-system
+        name: remote-deploy
   interval: 1m0s
   targetNamespace: default
