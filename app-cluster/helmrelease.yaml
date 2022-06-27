@@ -4,6 +4,9 @@ metadata:
   name: test
   namespace: flux-system
 spec:
+  kubeConfig:
+    secretRef:
+      name: remote-cluster-config
   chart:
     spec:
       chart: app-cluster/newChart-0.1.0.tgz
@@ -12,4 +15,4 @@ spec:
         kind: GitRepository
         name: flux-system
   interval: 1m0s
-  targetNamespace: remote
+  targetNamespace: default
