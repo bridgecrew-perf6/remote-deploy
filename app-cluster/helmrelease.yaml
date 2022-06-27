@@ -4,7 +4,7 @@ metadata:
   name: test
   namespace: flux-system
 spec:
-  ServiceAccountName: remote-sa
+  serviceAccountName: remote-sa
   #kubeConfig:
    # secretRef:
     #  name: remote-cluster-config
