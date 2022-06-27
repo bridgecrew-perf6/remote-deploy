@@ -4,9 +4,10 @@ metadata:
   name: test
   namespace: flux-system
 spec:
-  kubeConfig:
-    secretRef:
-      name: remote-cluster-config
+  ServiceAccountName: remote-sa
+  #kubeConfig:
+   # secretRef:
+    #  name: remote-cluster-config
   chart:
     spec:
       chart: app-cluster/newChart-0.1.0.tgz
