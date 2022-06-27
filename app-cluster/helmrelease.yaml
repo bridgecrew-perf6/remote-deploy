@@ -4,10 +4,10 @@ metadata:
   name: test
   namespace: default
 spec:
-  serviceAccountName: remote-sa
-  #kubeConfig:
-   # secretRef:
-    #  name: remote-cluster-config
+  #serviceAccountName: remote-sa
+  kubeConfig:
+    secretRef:
+      name: remote-cluster-config
   chart:
     spec:
       chart: app-cluster/newChart-0.1.0.tgz
