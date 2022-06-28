@@ -16,4 +16,4 @@ spec:
         kind: GitRepository
         name: remote-deploy
   interval: 1m0s
-  targetNamespace: default
+  targetNamespace: remote
